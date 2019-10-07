@@ -19,6 +19,8 @@ def reduce(source_array, starting_point=0)
   else
     value_to_return = source_array[0]
     counter = 1
+  end
+  
 
   while counter < source_array.length do
     value_to_return = yield(starting_point, source_array[counter])
