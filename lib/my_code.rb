@@ -22,7 +22,7 @@ def reduce(source_array, starting_point = nil)
   end
   
   while counter < source_array.length
-    value_to_return = yield(starting_point, source_array[counter])
+    value_to_return = yield(value_to_return, source_array[counter])
     counter += 1
   end
   
