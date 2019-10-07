@@ -4,7 +4,7 @@ def map(source_array)
   counter = 0
 
   while counter < source_array.length do
-    new_array << source_array[counter]
+    new_array << yield(array[counter])
     counter += 1
   end
 
