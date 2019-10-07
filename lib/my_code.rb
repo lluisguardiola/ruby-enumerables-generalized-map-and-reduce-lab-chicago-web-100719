@@ -27,5 +27,5 @@ def reduce(source_array, starting_point=0)
     counter += 1
   end
 
-  return value_to_return
+  value_to_return
 end
