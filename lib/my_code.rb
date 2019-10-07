@@ -9,5 +9,4 @@ def map(source_array)
   end
 
   return new_array
-  
 end
