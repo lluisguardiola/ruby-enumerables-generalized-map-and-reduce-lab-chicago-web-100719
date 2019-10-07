@@ -12,7 +12,6 @@ def map(source_array)
 end
 
 def reduce(source_array, starting_point = nil)
-  
   if starting_point
     value_to_return = starting_point
     counter = 0
@@ -20,12 +19,9 @@ def reduce(source_array, starting_point = nil)
     value_to_return = source_array[0]
     counter = 1
   end
-  
-
   while counter < source_array.length
     value_to_return = yield(starting_point, source_array[counter])
     counter += 1
   end
-
   return value_to_return
 end
