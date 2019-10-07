@@ -12,8 +12,13 @@ def map(source_array)
 end
 
 def reduce(source_array, starting_point=0)
-
-  counter = 0
+  
+  if starting_point
+    value_to_return = starting_point
+    counter = 0
+  else
+    value_to_return = source_array[0]
+    counter = 1
 
   while counter < source_array.length do
     starting_point = yield(starting_point, source_array[counter])
